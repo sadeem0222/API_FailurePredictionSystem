@@ -1,15 +1,64 @@
- API Test Failure Prediction using Machine Learning
+ API Failure Prediction System (Flask + Machine Learning)
 
-This project demonstrates how Machine Learning can be applied to Software Testing, specifically in Automation and API Testing.
+ Project Overview
 
-The goal of this project is to build a Machine Learning model that predicts whether an API test case will PASS or FAIL based on testing-related features such as response time, number of API calls, and previous failures.
+This project is a **Machine Learning-based API Failure Prediction System** that predicts whether an API request will **PASS or FAIL** based on input features such as:
 
-The project includes:
+- Number of API calls
+- Response time
+- Previous failures
 
-Creating a structured dataset related to API test execution
-Performing data analysis and visualization
-Training classification models to predict test outcomes
-Evaluating model performance
-Demonstrating how Machine Learning can support intelligent test execution
+The trained model is deployed using **Flask**, allowing real-time predictions through an API endpoint.
+A frontend (React) can be connected to interact with the prediction system.
 
-This project highlights the integration of Machine Learning into Software Testing workflows to improve test efficiency and prioritize failing test cases.
+
+
+ Machine Learning Model
+
+The system uses:
+
+- **Algorithm:** Random Forest Classifier
+- **Libraries:**
+
+  - scikit-learn
+  - pandas
+  - numpy
+  - joblib
+
+The model is trained using synthetic data simulating API behavior and failures.
+
+
+
+##  Features Used
+
+- api_calls
+- response_time
+- previous_failures
+
+These features help the model identify patterns that lead to API failures.
+
+
+
+## Future Improvements
+
+- Add real-time dashboard
+- Connect React frontend
+- Use real API logs dataset
+- Deploy using Docker
+- Improve model accuracy
+
+  ## Testing with Postman
+
+1. Open Postman  
+2. Set method to **POST**  
+3. URL:
+   http://127.0.0.1:5000/predict  
+4. Go to Body → raw → JSON  
+5. Paste request example  
+6. Click Send  
+
+
+##  Author
+
+Developed by **Sadeem**
+Machine Learning & Software Testing Enthusiast
